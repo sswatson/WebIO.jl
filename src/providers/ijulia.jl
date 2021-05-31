@@ -94,5 +94,5 @@ function main()
     ))
 end
 
-WebIO.setup_provider(::Val{:ijulia}) = main() # calling setup_provider(Val(:ijulia)) will display the setup javascript
+WebIO.setup_provider(::Val{:ijulia}) = nothing # calling setup_provider(Val(:ijulia)) will display the setup javascript
 WebIO.setup(:ijulia)
